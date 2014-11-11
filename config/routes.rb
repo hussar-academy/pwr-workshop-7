@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
-    resources :digs
-    post 'digs/:id/vote', to: 'digs#vote'
+    resources :digs do
+      member do
+        post 'vote'
+      end
+    end
   end
 
   get 'api' => proc { [404, {}, ['Invalid API endpoint']] }

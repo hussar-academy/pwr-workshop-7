@@ -4,5 +4,9 @@ angular.module('DigApp').config ($stateProvider, $urlRouterProvider) ->
   $stateProvider
     .state 'index',
       url: '/',
+      controller: 'DigsCtrl'
+      resolve:
+        digs: (Dig) ->
+          Dig.index()
       templateUrl: '/assets/index.html'
 
