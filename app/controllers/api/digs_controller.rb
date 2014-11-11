@@ -33,6 +33,12 @@ class Api::DigsController < ApplicationController
     head 200
   end
 
+  def comments
+    dig = Dig.find(params[:id])
+
+    render json: dig.comments
+  end
+
   private
     def dig_params
       params.require(:dig).permit(:title, :body, :owner_id)
