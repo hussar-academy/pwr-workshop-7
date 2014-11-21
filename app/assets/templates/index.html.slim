@@ -9,7 +9,8 @@ div ng-repeat="dig in digs"
         td
           | {{ dig.rating }}
 
-    h4 ng-bind="dig.title"
+    h4
+      a ui-sref="dig({id: dig.id})" ng-bind="dig.title"
     span ng-bind="dig.body"
 
     button type="button" ng-click="edit(dig)" Edit

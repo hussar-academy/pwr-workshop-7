@@ -3,6 +3,8 @@ angular.module('DigApp').service 'Dig', ($http, Rails) ->
 
   index: ->
     $http.get(base)
+  show: (id) ->
+    $http.get("#{base}/#{id}")
   create: (dig) ->
     $http.post(base, dig: dig)
   update: (dig) ->

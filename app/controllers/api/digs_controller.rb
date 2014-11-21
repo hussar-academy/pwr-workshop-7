@@ -3,6 +3,10 @@ class Api::DigsController < ApplicationController
     render json: Dig.all
   end
 
+  def show
+    render json: Dig.find(params[:id])
+  end
+
   def create
     render json: Dig.create!(dig_params)
   end
