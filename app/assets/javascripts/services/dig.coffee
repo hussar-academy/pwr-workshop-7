@@ -15,4 +15,6 @@ angular.module('DigApp').service 'Dig', ($http, Rails) ->
     $http.post("#{base}/#{dig.id}/vote", vote: amount)
   comments: (dig) ->
     $http.get("#{base}/#{dig.id}/comments")
+  comment: (digID, commentID) ->
+    $http.get("#{base}/#{digID}/comments/#{commentID}")
 

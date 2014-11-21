@@ -4,9 +4,9 @@ Rails.application.routes.draw do
       member do
         post 'vote'
         get 'comments'
+        get 'comments/:comment_id', to: 'digs#comment'
       end
     end
-    get 'digs/:dig_id/comments/:id', to: 'digs#comment'
   end
 
   get 'api' => proc { [404, {}, ['Invalid API endpoint']] }

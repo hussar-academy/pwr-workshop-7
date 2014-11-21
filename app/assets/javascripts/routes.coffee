@@ -18,3 +18,11 @@ angular.module('DigApp').config ($stateProvider, $urlRouterProvider) ->
           Dig.show($stateParams.id)
       templateUrl: '/assets/dig.html'
 
+    .state 'comment',
+      url: '/dig/:id/comments/:commentID'
+      controller: 'CommentCtrl'
+      resolve:
+        comment: ($stateParams, Dig) ->
+          Dig.comment($stateParams.id, $stateParams.commentID)
+      templateUrl: '/assets/comment.html'
+

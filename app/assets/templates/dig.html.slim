@@ -9,4 +9,5 @@ div ng-if="dig.comments.length > 0"
       span ng-bind="comment.body"
       span<
         | ({{ comment.owner_id}})
+      a< ui-sref="comment({id: dig.id, commentID: comment.id})" LINK
 
