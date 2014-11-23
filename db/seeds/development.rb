@@ -1,7 +1,9 @@
 # Create users
-jon   = User.create! email: 'jon.snow@winterfell.com'
-hodor = User.create! email: 'hodor@hodor.com'
-arya  = User.create! email: 'arya.stark@winterfell.com'
+password = 'password'
+
+jon   = User.create! email: 'jon.snow@winterfell.com', password: password, password_confirmation: password
+hodor = User.create! email: 'hodor@hodor.com', password: password, password_confirmation: password
+arya  = User.create! email: 'arya.stark@winterfell.com', password: password, password_confirmation: password
 
 # Create digs from the context of users
 jon.digs.create!    title: "First Jon's digg"
