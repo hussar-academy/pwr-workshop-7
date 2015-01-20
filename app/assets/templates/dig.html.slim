@@ -1,6 +1,15 @@
 h2 ng-bind="dig.title"
 p ng-bind="dig.body"
 
+div ng-controller="ObserverCtrl"
+
+  div ng-controller="PublisherCtrl"
+    button ng-click="emit()" Emit
+    button ng-click="broadcast()" Broadcast
+    button ng-click="broadcastOnRoot()" $rootScope
+
+    div ng-controller="ObserverCtrl"
+
 button type="button" ng-click="getComments(dig)" ng-hide="dig.comments" Get comments
 
 div ng-if="dig.comments.length > 0"

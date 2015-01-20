@@ -3,6 +3,8 @@ angular.module('DigApp').controller 'DigsCtrl', ($scope, Dig, digs) ->
   $scope.newDig = {}
   $scope.editedDigID = null
 
+  $scope.search = ''
+
   $scope.create = ->
     Dig.create($scope.newDig).success (response) ->
       $scope.digs.push response
@@ -30,4 +32,7 @@ angular.module('DigApp').controller 'DigsCtrl', ($scope, Dig, digs) ->
     Dig.vote(dig, amount).success (response) ->
       console.log response
       dig.rating += amount
+
+  $scope.isDigHot = (dig) ->
+    dig.rating >= 5
 
