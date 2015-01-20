@@ -2,15 +2,11 @@
 This application was created for learning purposes for `Koło Naukowe Tworzenia Aplikacji Webowych`: the academic circle in Politechnika Wrocławska.
 
 # WykopApp
-This application is the changed verion of [pwr-workshop-5](https://github.com/hussar-academy/pwr-workshop-5). Please see there if you need setup instructions.
+This application is the changed verion of [pwr-workshop-6](https://github.com/hussar-academy/pwr-workshop-6). Please see there if you need setup instructions.
 
-# [Assignments](https://github.com/hussar-academy/pwr-workshop-6/blob/master/assignments.md)
+# [Assignments](https://github.com/hussar-academy/pwr-workshop-7/blob/master/assignments.md)
 
-Assignments to solve.
-
-# [Cheatsheet](https://github.com/hussar-academy/pwr-workshop-6/blob/master/cheatsheet.md)
-
-Cheatsheet with Rails form
+Assignment to solve.
 
 # Feedback
 
