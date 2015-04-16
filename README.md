@@ -8,6 +8,8 @@ This application is the changed verion of [pwr-workshop-6](https://github.com/hu
 
 Assignment to solve.
 
+# [Video](https://www.youtube.com/watch?v=jMpya-G5meM)
+
 # Feedback
 
 We would love your feedback after the workshop. It's very important to us, so we can improve for our next meetings :)
